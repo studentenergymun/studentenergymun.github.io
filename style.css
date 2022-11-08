@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+
+
+
+.mySlides1,
+.mySlides2 {
+  display: none
+}
+
+.navbar {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.navbar .logo {
+  width: 200px;
+  height: auto;
+  padding: 10px 25px;
+  margin-top: 5px;
+}
+
+.navbar ul {
+  float: right;
+  margin-right: 20px;
+}
+
+.navbar ul li {
+  list-style: none;
+  margin: 0 8px;
+  display: inline-block;
+  line-height: 80px;
+}
+
+.navbar ul li a {
+  font-size: 20px;
+  font-family: 'Bebas';
+  color: white;
+  padding: 6px 13px;
+  text-decoration: none;
+  transition: .4s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  background: #317db2;
+  border-radius: 2px;
+}
+
+.hero {
+  background: url("./images/hero.png");
+  background-size: cover;
+  opacity: 0.9;
+  height: 100vh;
+  margin-top: 80px;
+}
+
+.button {
+  position: absolute;
+  margin-top: -130px;
+  margin-left: 480px;
+  background-color: #317db2;
+  border-radius: 16px;
+  border: 5px solid #fdfdfd;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutus {
+  background-color: #fdfdfd;
+  height: 100vh;
+  width: auto;
+  font-family: 'Bebas';
+}
+
+.aboutus .box {
+  display: flex;
+}
+
+.aboutus .header {
+  font-size: 31.5px;
+  font-family: 'Bebas';
+  color: #317db2;
+  margin-left: 150px;
+  padding: 30px;
+}
+
+.slogan {
+  font-size: 18px;
+  color: #8cb87a;
+  text-align: center;
+  margin-top: -35px;
+}
+
+.aboutus .mission {
+  text-align: left;
+  margin-left: 98px;
+  margin-top: 0px;
+  height: 60vh;
+  width: 450px;
+  border: 5px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 5px #202223;
+}
+
+.aboutus .intro {
+  font-size: 27px;
+  font-family: 'bebas';
+  text-align: justify;
+  width: 1150px;
+  border: 5px solid #317db2;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.aboutus .box {
+  margin-top: 10px;
+}
+
+.aboutus .mission h1 {
+  padding: 30px;
+  font-size: 35px;
+  margin-left: 60px;
+  font-family: 'bebas';
+  color: #317db2;
+}
+
+.aboutus .mission .body {
+  font-size: 20px;
+  font-family: 'Bebas';
+  line-height: 1.6;
+  text-align: justify;
+  margin-top: -10px;
+}
+
+.aboutus .goals {
+  height: 60vh;
+  width: 450px;
+  margin-top: 0px;
+  margin-left: 250px;
+  border: 5px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 5px #202223;
+}
+
+.aboutus .goals h1 {
+  padding: 30px;
+  font-size: 35px;
+  margin-left: 85px;
+  font-family: 'bebas';
+  color: #317db2;
+}
+
+.aboutus .goals .g-body {
+  font-size: 20px;
+  font-family: 'Bebas';
+  text-align: justify;
+  margin-top: -10px;
+}
+
+.our-team {
+  background-color: #b1d4e0;
+  background-image: url("images/background.png");
+  height: 120vh;
+  width: auto;
+  font-family: 'Bebas';
+}
+
+.our-team .header {
+  font-size: 31.5px;
+  font-family: 'Bebas';
+  color: #202223;
+  margin-left: 150px;
+  padding: 30px;
+}
+
+.our-team .box {
+  display: flex;
+  margin-left: 40px;
+}
+
+.our-team .box .card-1 {
+  border: 5px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 5px #202223;
+  height: 90vh;
+  width: 450px;
+
+}
+
+.our-team .box .card-1 .header {
+  font-size: 20px;
+  margin-top: -32px;
+  margin-left: 75px;
+}
+
+.our-team .box .card-1 .img {
+  width: 20px;
+  height: 20px;
+  filter: grayscale(100%);
+  margin-left: 55px;
+  margin-top: -25px;
+
+
+}
+
+.our-team .box .card-1 .about {
+  margin-top: 250px;
+}
+
+.our-team .box .card-1 .about h1 {
+  margin-left: 80px;
+  margin-top: -30px;
+}
+
+.our-team .box .card-1 .about .bio {
+  margin-top: 30px;
+  text-align: justify;
+  font-size: 22px;
+}
+
+.our-team .box .card-2 {
+  border: 5px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 5px #202223;
+  height: 90vh;
+  width: 450px;
+
+}
+
+.our-team .box .card-2 .header {
+  font-size: 20px;
+  margin-top: -32px;
+  margin-left: 20px;
+
+}
+
+.our-team .box .card-2 .img {
+  width: 20px;
+  height: 20px;
+  margin-left: 87px;
+  margin-top: -30px;
+  filter: grayscale(100%);
+}
+
+.our-team .box .card-2 .about {
+  margin-top: 290px;
+}
+
+.our-team .box .card-2 .about h1 {
+  margin-left: 120px;
+  margin-top: -40px;
+}
+
+.our-team .box .card-2 .about .bio {
+  margin-top: 12px;
+  text-align: justify;
+  font-size: 22px;
+}
+
+.our-team .box .card-3 {
+  border: 5px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 5px #202223;
+  height: 90vh;
+  width: 450px;
+
+}
+
+.our-team .box .card-3 .header {
+  font-size: 18px;
+  margin-top: -32px;
+  margin-left: -10px;
+
+}
+
+.our-team .box .card-3 .img {
+  width: 20px;
+  height: 20px;
+  margin-left: 87px;
+  margin-top: -19px;
+  filter: grayscale(100%);
+
+}
+
+.our-team .box .card-3 .about {
+  margin-top: 300px;
+}
+
+.our-team .box .card-3 .about h1 {
+  margin-left: 120px;
+  margin-top: -50px;
+}
+
+.our-team .box .card-3 .about .bio {
+  margin-top: 12px;
+  text-align: justify;
+  font-size: 22px;
+}
+
+/* Slideshow container */
